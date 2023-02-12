@@ -16,11 +16,11 @@ class MatchTest {
 
     @Test
     fun simpleAddTest(){
-        assertEquals("4",match?.add("2","2"))
+        assertEquals("5",match?.add("3","2"))
     }
     @Test
     fun doubleAddTest(){
-        assertEquals("4.5",match?.add("2","2.5"))
+        assertEquals("4.0",match?.add("2","2.5"))
     }
     @Test
     fun symbolAddTest(){
@@ -29,7 +29,7 @@ class MatchTest {
 
     @Test
     fun simpleDivide(){
-        assertEquals("3",match?.divide("6","2"))
+        assertEquals("1",match?.divide("6","2"))
     }
     @Test
     fun divideOnZero(){

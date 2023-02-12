@@ -5,7 +5,7 @@ class Match {
         val result: String
         if (a.contains(".") || b.contains(".")) {
             result = (a.toDouble() + a.toDouble()).toString()
-        } else if (!isInteger(a) || isInteger(b)) {
+        } else if (!isInteger(a) || !isInteger(b)) {
             result = "Нельзя писать символы"
         }
         else {
